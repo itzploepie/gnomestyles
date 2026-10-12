@@ -9,14 +9,8 @@ icon-size-shortcuts=-1
 menu-button-icon='resource:///org/gnome/shell/extensions/arcmenu/icons/scalable/actions/distro-fedora-symbolic.svg'
 menu-layout='11'
 prefs-visible-page=0
-recently-installed-apps=['firefox.desktop', 'ca.desrt.dconf-editor.desktop']
 search-entry-border-radius=(true, 25)
 update-notifier-project-version=74
-
-[chromaleon]
-custom-color=true
-recolor-folders=true
-user-themes-warning=false
 
 [clipboard-indicator]
 blink-icon-on-copy=true
@@ -50,13 +44,6 @@ trans-bg-color='#36363a'
 trans-use-custom-bg=true
 trans-use-custom-gradient=false
 window-preview-title-position='TOP'
-
-[ding]
-check-x11wayland=true
-dark-text-in-labels=false
-icon-size='standard'
-show-network-volumes=false
-use-nemo=false
 
 [vitals]
 hot-sensors=['_memory_usage_', '__temperature_avg__']
