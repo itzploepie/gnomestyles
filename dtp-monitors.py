@@ -9,7 +9,7 @@ import subprocess
 from gi.repository import Gio, GLib
 
 DCONF_PATH = "/org/gnome/shell/extensions/dash-to-panel/"
-PANEL_SIZE = 40
+PANEL_SIZE = 44
 
 ELEMENTS = [
     ("showAppsButton", False, "stackedTL"),
