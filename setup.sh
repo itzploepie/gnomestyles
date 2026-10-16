@@ -4,7 +4,12 @@
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
-# configure packages
+#dash to panel packages
+sudo dnf copr enable ublue-os/packages
+sudo dnf config-manager setopt copr:copr.fedorainfracloud.org:ublue-os:packages.enabled=0
+sudo dnf -y --enablerepo copr:copr.fedorainfracloud.org:ublue-os:packages install gnome-rounded-blur
+
+# configure gnome packages
 sudo dnf remove gnome-weather gnome-tour gnome-font-viewer gnome-contacts gnome-connections gnome-clocks gnome-characters gnome-calendar gnome-calculator gnome-boxes gnome-maps gnome-help gnome-system-monitor libreoffice-core mediawriter simple-scan malcontent-control
 sudo dnf copr enable atim/resources
 sudo dnf install python3 fastfetch gnome-tweaks gnome-extensions-app resources
