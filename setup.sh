@@ -15,7 +15,7 @@ sudo dnf update
 mv -f extensions ~/.local/share/gnome-shell
 dconf load /org/gnome/shell/extensions/ < extensions.dconf
 python3 dtp-monitors.py
-gsettings set org.gnome.shell enabled-extensions "['Vitals@CoreCoding.com', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'user-accent-colors@fabito02', 'clipboard-indicator@tudmotu.com']"
+gsettings set org.gnome.shell enabled-extensions "['Vitals@CoreCoding.com', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'user-accent-colors@fabito02', 'clipboard-indicator@tudmotu.com', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx']"
 
 # conformation
 while true; do
