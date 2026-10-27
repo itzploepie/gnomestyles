@@ -4,11 +4,6 @@
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
-#dash to panel packages
-sudo dnf copr enable ublue-os/packages
-sudo dnf config-manager setopt copr:copr.fedorainfracloud.org:ublue-os:packages.enabled=0
-sudo dnf -y --enablerepo copr:copr.fedorainfracloud.org:ublue-os:packages install gnome-rounded-blur
-
 # configure gnome packages
 sudo dnf remove gnome-weather gnome-tour gnome-font-viewer gnome-contacts gnome-connections gnome-clocks gnome-characters gnome-calendar gnome-calculator gnome-boxes gnome-maps gnome-help gnome-system-monitor libreoffice-core mediawriter simple-scan malcontent-control
 sudo dnf copr enable atim/resources
@@ -20,7 +15,7 @@ sudo dnf update
 mv -f extensions ~/.local/share/gnome-shell
 dconf load /org/gnome/shell/extensions/ < extensions.dconf
 python3 dtp-monitors.py
-gsettings set org.gnome.shell enabled-extensions "['Vitals@CoreCoding.com', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'user-accent-colors@fabito02', 'clipboard-indicator@tudmotu.com', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx']"
+gsettings set org.gnome.shell enabled-extensions "['Vitals@CoreCoding.com', 'arcmenu@arcmenu.com', 'dash-to-panel@jderose9.github.com', 'user-accent-colors@fabito02', 'clipboard-indicator@tudmotu.com', 'appindicatorsupport@rgcjonas.gmail.com',]"
 
 # conformation
 while true; do
