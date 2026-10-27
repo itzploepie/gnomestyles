@@ -4,7 +4,7 @@ Dash to panel, Arcmenu, DING, Chromaleon, Vitals
 <b>Installation steps</b>
 ```
 
-git clone https://github.com/itzploepie/testextensions.git
+git clone https://github.com/itzploepie/gnomestyles.git
 cd testextensions
 chmod +x setup.sh
 ./setup.sh
